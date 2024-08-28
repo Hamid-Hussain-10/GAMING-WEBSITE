@@ -1,0 +1,47 @@
+.about-us{
+  width: 100vw;
+}
+
+.heading{
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  font-size: 3em;
+  padding-top: 0.1em;
+}
+
+.about-us,
+p {
+  width: 90vw;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.about-para {
+  width: 70%;
+  margin: 1em 4em;
+  padding: 3em;
+  font-size: 1.3em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 3px solid red;
+  border-radius: 10% 5%;
+  box-shadow: 10px 10px 10px rgba(116, 0, 0, 0.993);
+}
+
+.about-para:hover{
+  box-shadow: 10px 10px 10px rgba(0, 19, 83, 0.993);
+}
+
+.about-img1 {
+  position: absolute;
+  top: 230%;
+  left: 74%;
+  transform: rotate(20deg);
+  transform-origin: left;
+}
+
+.about-img1 img {
+  width: 22vw;
+  height: 50vh;
+}

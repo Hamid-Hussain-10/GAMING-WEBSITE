@@ -1,0 +1,119 @@
+.about {
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: row;
+}
+
+h2 {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  font-size: 3em;
+  padding-top: 0.7em;
+}
+
+h4 {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  font-size: 1em;
+}
+
+.about-btn {
+  width: 10vw;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.7em 0.6em;
+  font-size: 1em;
+  font-weight: 550;
+  background-color: rgb(7, 31, 63);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  font-family: "Orbitron", sans-serif;
+  position: relative;
+  left: 45%;
+  margin:1.5em;
+}
+
+.about-btn:hover {
+  background-color: #e9660f;
+}
+
+.cards-img {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 50vh;
+  color: white;
+  padding: 2em;
+  margin: 4em;
+  border-radius: 15% 5% 15% 5%;
+  background-color: rgb(7, 31, 63);
+  background: linear-gradient(13deg, rgb(7, 31, 63), rgb(2, 128, 144));
+  background-size: 200% 200%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+
+.cards-img::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #db10db);
+  background-size: 400% 400%;
+  z-index: -1;
+  border-radius: inherit;
+  transition: all 0.6s ease; 
+}
+
+.cards-img:hover {
+  animation: gradient-border 5s ease infinite,
+    border-radius-change 5s ease infinite;
+}
+
+.cards-img:hover::before {
+  animation: gradient-animation 8s ease infinite,
+    border-radius-change 5s ease infinite;
+}
+
+.cards-img img {
+  width: 18vw;
+  height: 35vh;
+  margin: auto;
+  border-radius: 1.5em;
+  z-index: 2;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes border-radius-change {
+  0%,
+  100% {
+    border-radius: 15% 5% 15% 5%;
+  }
+  25% {
+    border-radius: 5% 15% 5% 15%;
+  }
+  50% {
+    border-radius: 50% 15% 50% 15%;
+  }
+  75% {
+    border-radius: 10% 50% 10% 50%;
+  }
+}

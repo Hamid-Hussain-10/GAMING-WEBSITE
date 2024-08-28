@@ -1,0 +1,100 @@
+.footer {
+  width: 100vw;
+  background-color: #ff0037;
+  border-radius: 4em 0 0 0;
+  overflow: hidden;
+}
+
+.footer-container {
+  padding: 4em;
+  margin-left: 10em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.footer-links-container {
+  display: inline-block;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.footer-logo {
+  position: absolute;
+  top: 327%;
+  left: 3%;
+  transform: rotate(-25deg);
+  transform-origin: left;
+  width: 20vw;
+  height: 40vh;
+  border: 3px solid rgb(8, 1, 75);
+  border-radius: 20% 15% 30% 30%;
+}
+
+.footer-links-title {
+  font-size: 1.3em;
+  color: #021c4e;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.footer-links-nav {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2em;
+  list-style: none;
+}
+
+.footer-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #014dd1;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.footer-bottom-container {
+  display: flex;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.footer-bottom-text {
+  color: #000000;
+  font-size: 1em;
+  font-weight: 700;
+  padding-top: 1em;
+  font-family: "Orbitron", sans-serif;
+
+}
+
+.footer-social-icons {
+  display: flex;
+  column-gap: 1.5em;
+  list-style: none;
+  font-size: 0.8em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 6em;
+}
+
+.footer-social-icons a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-social-icons a:hover {
+  transform: translate(10%);
+}
